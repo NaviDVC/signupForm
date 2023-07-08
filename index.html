@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="signup">
+      <div class="wrapper">
+        <div class="title">
+          <h5>Create your account</h5>
+        </div>
+        <div class="name-surname">
+          <div class="name">
+            <div>
+              <small></small>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Name" />
+
+
+          </div>
+          <div class="surname">
+            <div>
+              <small></small>
+            </div>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Surname"
+            />
+            
+          </div>
+        </div>
+        <div class="birth">
+          <label>
+            <p>Enter your birthday date:</p>
+            <div>
+              <small></small>
+            </div>
+            <input type="date" name="birth" id="birth" />
+          </label>
+        </div>
+        <div class="gender">
+          <p>Choose your gender:</p>
+          <div class="radio-error">
+            <small></small>
+          </div>
+          <input
+            type="radio"
+            name="gender"
+            id="man"
+            class="gender"
+            value="man"
+          />
+          <label for="man">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="woman"
+            class="gender"
+            value="woman"
+          />
+          <label for="woman">Female</label>
+        </div>
+        <div class="city">
+          <div>
+            <small></small>
+          </div>
+          <select name="city" id="city">
+            <option value="">Choose your city</option>
+            <option value="Kiyv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Zaporizhzhia">Zaporizhzhia</option>
+            <option value="Odesa">Odesa</option>
+            <option value="Dnipro">Dnipro</option>
+          </select>
+        </div>
+        <div class="address">
+          <label>
+            <p>Enter your address:</p>
+            <div>
+              <small></small>
+            </div>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Your address here"
+            />
+          </label>
+        </div>
+        <div class="langs">
+          <p>Select languages you know:</p>
+          <div class="lang-error">
+            <small></small>
+          </div>
+          <input type="checkbox" name="lang" id="ukr" value="Ukrainian" />
+          <label for="ukr">Ukrainian</label>
+          <input type="checkbox" name="lang" id="eng" value="English" />
+          <label for="eng">English</label>
+          <input type="checkbox" name="lang" id="ger" value="German" />
+          <label for="ger">German</label>
+        </div>
+        <div class="submit">
+          <button type="submit" name="button" id="btn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
